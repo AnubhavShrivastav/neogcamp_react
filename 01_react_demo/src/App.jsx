@@ -1,13 +1,22 @@
-let color = "blue";
-let align = "center"; 
-let userName = prompt("enter your name : ")
+// let color = "blue";
+// let align = "center"; 
+// let userName = prompt("enter your name : ")
 
-function App() {
-  return (
-    <div className = "app">
+function likeHandler(){
+  console.log("liked")
+}
 
-   <h1 style = {{textAlign : align}}>welcome <span style={{color : color }}>{userName}</span> </h1> 
-   </div>
+function App(){
+  return(
+  //   <div className = "app">
+
+  //  <h1 style = {{textAlign : align}}>welcome <span style={{color : color }}>{userName}</span> </h1> 
+
+  <button onClick={likeHandler}>like</button>
+
+  //  </div>
+
+
   )
 }
 
