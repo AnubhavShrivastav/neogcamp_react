@@ -2,11 +2,16 @@
 // let align = "center"; 
 // let userName = prompt("enter your name : ")
 
-function likeHandler(){
-  console.log("liked")
-}
+ function App(){
 
-function App(){
+  let likeCounter = 0;
+
+  function likeHandler(){
+  let increment = likeCounter+=1;  
+  console.log("clicked ",increment);
+  }
+
+
   return(
   //   <div className = "app">
 
