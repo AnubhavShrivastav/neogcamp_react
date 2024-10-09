@@ -5,7 +5,7 @@ function App() {
 
 const [userInput, setInput] = useState('')
 
- function inputHandler(){
+ function inputHandler(event){
   console.log(event.target.value)
   setInput(event.target.value)
  }
