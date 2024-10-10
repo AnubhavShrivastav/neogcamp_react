@@ -10,8 +10,13 @@ function App() {
       <h1>shopping list</h1>
      <ul>
      {
-      shoppingList.map(i => {
-        return <li>{i}</li>
+      shoppingList.map((item,index) => {
+
+       if(index % 2 != 0 ){
+       return <li id='odd' >{item}</li>
+       }
+
+        return <li>{item}</li>
       })
      } 
         </ul>
