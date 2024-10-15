@@ -41,6 +41,11 @@
   color: #888;
 }
 
+
+
 #odd{
   background-color: grey;
+  padding: 1rem;
+  font-size: large;
+  color: mediumblue;
 }
