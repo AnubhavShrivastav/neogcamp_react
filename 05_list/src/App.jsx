@@ -4,22 +4,31 @@ import './App.css'
 
   let shoppingList = ["orange","apple","Eggs","rice","bread","candle","potato","jackFruits"];
 
+  function getbg(index){  
+   if (index % 2 == 0 ){
+    return "white";
+   }else{
+    return "grey" ;
+   }
+  }
+
+  function listHandler(item){
+   console.log("clicked",item)
+  }
 
    return (
      <>
        <h1>shopping list</h1>
-      <ul>
+
+    <ul>
       {
-       shoppingList.map((item,index) => {
-
-        if(index % 2 != 0 ){
-        return <li id='odd' >{item}</li>
-        }
-
-         return <li style={{padding: "1rem"}}>{item}</li>
-       })
-      } 
-         </ul>
+        shoppingList.map((item,index) => {
+         return  <li onClick = {() => listHandler(item)} style={{backgroundColor: getbg(index), padding: "1rem"}}>{item}</li>
+        })
+      }
+      
+      </ul>  
+    
      </>
    )
  }
